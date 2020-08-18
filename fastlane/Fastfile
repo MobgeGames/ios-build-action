@@ -38,11 +38,6 @@ platform :ios do
     install_provisioning_profile(
       path: "ios-build.mobileprovision"
     )
-    update_project_provisioning(
-      xcodeproj: ENV["PROJECT_PATH"],
-      profile: "ios-build.mobileprovision",
-      code_signing_identity: ENV["CODE_SIGNING_IDENTITY"]
-    )
     update_code_signing_settings(
       use_automatic_signing: true,
       team_id: ENV["TEAM_ID"],
