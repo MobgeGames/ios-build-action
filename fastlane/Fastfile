@@ -45,7 +45,7 @@ platform :ios do
     )
     update_code_signing_settings(
       use_automatic_signing: true,
-      team_id: teamid: ENV["TEAM_ID"]
+      team_id: ENV["TEAM_ID"]
       code_sign_identity: ENV["CODE_SIGNING_IDENTITY"]
       path: ENV["PROJECT_PATH"]
     )
